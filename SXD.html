@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <link rel="icon" href="http://127.0.0.1:8001/photo/1.jpg">
+    <meta charset="UTF-8">
+    <title>SXD</title>
+</head>
+
+<body bgcolor="blue">
+<font size="3" face="Arial">
+    <div style="background:blue;height:96px;width:100%;float:left">
+        <font size="4" face="Arial">
+            <center>
+                <h1>SXD团队</h1>
+            </center>
+        </font>
+        <hr>
+    </div>
+
+    <div style="background:white;width:20%;height:512px;float:left;border-radius:8px">
+        <div style="background:#37F;float:left;width:100%;border-radius:8px">
+            <font size="4" face="Serif">
+                <h3>传送门</h3>
+            </font>
+        </div>
+        <font size="2" face="Arial">
+            <a href="/"><button style="background-color:white;width:100%;height:50px;border:none;">Home</button></a>
+            <a href="/SXD.html"><button style="background-color:white;width:100%;height:50px;border:none;">SXD</button></a>
+            <a href="/truth.html"><button style="background-color:white;width:100%;height:50px;border:none;">Truth</button></a>
+            <a href="/news.html"><button style="background-color:white;width:100%;height:50px;border:none;">News</button></a>
+        </font>
+    </div>
+</font>
+
+<div style="background-color:white;height:512px;width:75%;float:right;">
+    <div style="height:512px;width:100%;">
+        <p>由mylights在官网于4月创建的团队</p>
+        <center>
+            <a href="https://mozhua.aerfaying.com/Studios/26149">
+                <button style="background-color:#38F;width:288px;height:48px;border:none" >去A营的工作室</button>
+            </a>
+        </center>
+
+        <div style="background:#EEE;width:100%;border-radius:8px;height:148px">
+            <center><h3>作品展示</h3></center>
+            <a href="https://aerfaying.com/Projects/530156">
+                <img src="https://cdn.mozhua.org/Media?name=6E8D1F301FC04907F5AAE97D842E1217.png"
+                     width="128" height="96" title="ThoudTalk Plus">
+            </a>
+            <a href="https://aerfaying.com/Projects/530056">
+                <img src="https://cdn.mozhua.org/Media?name=F8D32351A3520A9851E99AC5FD34A1F0.png"
+                     width="128" height="96" title="Truth v1.1.3">
+            </a>
+            <a href="https://aerfaying.com/Projects/467904">
+                <img src="https://cdn.mozhua.org/Media?name=72B04C7CD291E1ADE2411E3346AB18D4.png"
+                     width="128" height="96" title="图形的战斗">
+            </a>
+
+        </div>
+
+        <font size="3" face="Arial">
+            <div style="background:#FEFECC;height:312px;width:100%;">
+                <h1>加入SXD问卷</h1>
+                <form action="http://127.0.0.1:8001/sxdjoin" method="post" name="Join" onsubmit="return check(this)">
+                    <p>你在A营的用户名：<input style="width:25%;" type="text" name="Username"></p>
+                    <p>你在A营的等级：<input style="width:25%" type="text" name="Level"></p>
+                    <p>你所期望的工作：<input style="width:25%" type="text" name="Job"></p>
+                    <p>你的代表作的网址：<input style="width:25%" type="text" name="Project"></p>
+                    <p><input type="submit" name="submit" value="提交"></p>
+                </form>
+                <script type="text/javascript">
+                    function check(form){
+                        if(form.Username.value==""){
+                            alert("Username can't be blank.");
+                            return false;
+                        }
+                    }
+                </script>
+            </div>
+        </font>
+    </div>
+</div>
+</body>
+</html>
